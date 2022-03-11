@@ -1,0 +1,12 @@
+package com.example.abstractclass;
+
+public interface Playable {
+
+    void play();
+
+
+    default void printAbout() {
+        System.out.println("I am a Pet!");
+    }
+
+}
