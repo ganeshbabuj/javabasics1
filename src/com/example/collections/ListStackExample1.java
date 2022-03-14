@@ -124,5 +124,18 @@ public class ListStackExample1 {
 
         System.out.println("\n");
 
+        List<Employee> simpleEmployeeList = new ArrayList<>();
+        simpleEmployeeList.add(new Employee(1, "name1", 24));
+        simpleEmployeeList.add(new Employee(2, "name2", 25));
+
+        List<Employee> employeeList = new ArrayList<>();
+        employeeList.add(new Employee(3, "name3", 24));
+        employeeList.add(new Employee(2, "name2", 25));
+        employeeList.add(new Employee(1, "name1", 25));
+
+        Collections.sort(employeeList);
+        System.out.println(employeeList);
+
+
     }
 }
